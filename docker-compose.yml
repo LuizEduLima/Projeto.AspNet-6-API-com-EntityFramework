@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  projeto06.api:
+    image: ${DOCKER_REGISTRY-}projeto06api
+    build:
+      context: .
+      dockerfile: Projeto06.Api/Dockerfile
